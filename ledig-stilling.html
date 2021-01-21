@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samnanger kommune</title>
+    <style>
+        body {
+          font-family: arial, sans-serif;
+        }
+        .logo {
+          width:528px;
+          height:128px;
+        }
+        .search_button {
+          float: right;
+          padding: 6px;
+          margin-top: 8px;
+          margin-right: 16px;
+          background: #ddd;
+          font-size: 17px;
+          border: none;
+          cursor: pointer;
+        }
+        div.menu {
+          background-color: #333;
+          overflow: auto;
+          white-space: nowrap;
+        }
+        
+        div.menu a {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px;
+          text-decoration: none;
+        }
+        
+        div.menu a:hover {
+          background-color: #777;
+        }
+        .active {
+          background-color:#777;
+        }
+        footer {
+          text-align: center;
+          padding: 3px;
+          background-color: lightgray;
+          color: black;
+        }
+    </style>
+</head>
+<body>
+    <a class="logo" href="index.html">
+        <img src="samnanger.jpg" alt="samnanger">
+    </a>
+    <div class="search_button">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Hva leter du etter.." name="search">
+          <button type="submit">Søk</button>
+        </form>
+    </div>
+    <div class="menu">
+        <a href="index.html">Hjem</a>
+        <a href="om.html">Om Samnanger</a>
+        <a href="tjenester.html">Tjenester</a>
+        <a href="legevakt.html">Legevakt</a>
+        <a href="kommunal.html">Kommunal organisasjon</a>  
+        <a class="active" href="ledig-stilling.html">Ledige stillinger</a>
+        <a href="folkevalgt.html">Politikk</a>
+        <a href="innhold.html">Innhold A-Å</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="main">
+        <h2>Ledige stillinger</h2>
+        <p>
+            Her finn du oversikt over ledige stillingar i Samnanger kommune.
+
+            Dei fleste ledige stillingar i Samnanger kommune vert publiserte i dataverktøyet EasyCruit. <br>
+            For stillingar som er publiserte i EasyCruit, skal søknader fyllast ut og sendast inn elektronisk gjennom EasyCruit. Lenke til søknadsskjema finn du i den einskilde stillingsannonsen.<br>
+            Oversikta over ledige stillingar er delt inn i:<br>
+        </p>
+        <p>
+            <ul>
+                <li> <a href="https://samnanger.easycruit.com/"> Ledige stillingar utlyst i EasyCruit </a></li>
+            </ul>
+        </p>
+      </div>
+      <br><br><br><br>
+      <footer>
+        <p>Samnanger kommune (orgnr. 964968985) Tyssevegen 217, 5650 Tysse / Telefon: 56 58 74 00 <br>
+        <p>@powered by Gis &copy;
+      </footer>
+</body>
+</html>
