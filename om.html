@@ -3,73 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Samnanger kommune</title>
-    <style>
-        body {
-            font-family: arial, sans-serif;
-        }
-        .logo {
-            width:528px;
-            height:128px;
-        }
-        .search_button {
-            float: right;
-            padding: 6px;
-            margin-top: 8px;
-            margin-right: 16px;
-            background: #ddd;
-            font-size: 17px;
-            border: none;
-            cursor: pointer;
-        }
-      
-        div.menu {
-            background-color: #333;
-            overflow: auto;
-            white-space: nowrap;
-        }
-        
-        div.menu a {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px;
-            text-decoration: none;
-        }
-        
-        div.menu a:hover, .active {
-            background-color: #777;
-        }
-
-        table {
-            border-collapse: collapse;
-            /* width: 100%; */
-            }
-
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-            }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-            }
-        footer {
-            text-align: center;
-            padding: 3px;
-            background-color: lightgray;
-            color: black;
-        }
-    </style>
 </head>
 <body>
     <a class="logo" href="index.html">
         <img src="samnanger.jpg" alt="samnanger">
     </a>
     <div class="search_button">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Hva leter du etter.." name="search">
+      <form action="index.html">
+        <input type="text" required placeholder="Hva leter du etter.." name="search">
         <button type="submit">Søk</button>
       </form>
     </div>
@@ -85,7 +29,7 @@
         <a href="kontakt.html">Kontakt</a>
       </div>
       <div class="main">
-        <h2>
+        <h2 id="om">
             Tall og fakta om Samnanger kommune
         </h2>
         <table>
@@ -130,12 +74,14 @@
 
         </p>
 
-        <img src="Samnanger_kommune.jpg" alt="Samnanger_kommune" style="width:528px;height:258px;">
+        <img class="photo-samnanger" src="Samnanger_kommune.jpg" alt="Samnanger_kommune" >
 
       </div>
 
       <footer>
-        <p>Samnanger kommune (orgnr. 964968985) Tyssevegen 217, 5650 Tysse / Telefon: 56 58 74 00 <br>
+        <p>Samnanger kommune (orgnr. 964968985) Tyssevegen 217, 5650 Tysse / Telefon: 56 58 74 00
+          <a href= "https://www.facebook.com/samnanger/" class="fa fa-facebook"></a>
+          <a href= "https://www.instagram.com/samnangerkommune/?hl=en" class="fa fa-instagram"></a>
         <p>@powered by Gis &copy;
       </footer>
 </body>
