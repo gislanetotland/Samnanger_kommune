@@ -23,7 +23,6 @@ body {
     white-space: nowrap;
     /*width: 100%, position: relative*/
   }
-  
   .menu a {
     display: inline-block;
     color: white;
@@ -31,28 +30,25 @@ body {
     padding: 14px;
     text-decoration: none;
   }
-  
   div.menu a:hover, .active {
     background-color: #777;
   }
 
-  /* style for coronavirus section  */
+  /* Coronavirus section  */
   .corona {
     border-style: solid;
     border-width: 2px;
     border-color: rgb(255, 0, 0);
     background-color:#FFB6C1;
     color: #00008B;
-
   }
   #coronavaksine {
     padding-left: 40px;  /*add some spaces between links*/
-    
   }
   div.main-index, #om {
     text-align: center;
 }
-  .hjelp{
+  .main-container, .container, .main-english {
     display: inline-block;
     width: 100%;
   }
@@ -61,8 +57,7 @@ body {
     width: 60%; 
     float: left;
   }
-
-  #telefone{
+  #telephone{
     text-align: center;
     background-image: url("telefon.jpg");
     background-repeat: no-repeat;
@@ -70,21 +65,43 @@ body {
     width: 40%;
     float: right;
   }
-  .photo, #telefone {
+  .photo, #telephone {
     height:200px;
     object-fit: cover;
   }
+  .animationJS{
+    text-align: center;
+    width:200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    }
+
+  /* Container section */
+
+  .link-section{
+    width: 60%; 
+    float: left;
+    height: 300px;
+    background-color:  #f0f7fe;
+  }
+  /*
+  .linkene{
+    width: 60%; 
+    float: left;
+    height: 300px;
+    background-color:  #f0f7fe;
+  }*/
   .linkene a{
     text-decoration: none;
     color: black;
   }
   table.linkene {
-    padding-top: 20px;
-    margin-left: 50px; 
-    width: 60%; 
-      }
+   padding-top: 20px; 
+   margin-left: 20px; 
+  }
   table.linkene th, table.linkene td{
-    width: 30%; 
+    width: 20%;
   }
   table.linkene th{
     text-decoration: none;
@@ -96,26 +113,24 @@ body {
     text-align:center;
     color: darkslateblue;
     margin: 30px; 
-
   }
   #sosial-media{
     width: 40%;
+    float: right;
+    text-align: center;
+    background-color:#c3e1fe;
+    height:300px;
   }
-  
-  .container, {
-    display: inline-block;
-    width: 100%;
-  }
-  #tjeneste {
+  .tjeneste {
     text-decoration: none;
     color: darkslateblue;
-    float:right;
-    width: 50%;
+    text-align: left;
+  
   }
   
   .main, ul {
     margin: 85px; 
-    list-style-type:circle;
+    list-style-type: circle;
   }
   ul{
     line-height: 1.8; /*space between line*/
@@ -162,6 +177,28 @@ body {
    .fas {
     font-size:24px
    }
+
+/* English style */
+
+.information-english{
+  width: 60%; 
+  float: left;
+  height: 520px;
+  background-color:  #f0f7fe;
+  
+}
+.information-english h2, .information-english p{
+  text-align: center;
+} 
+.information-english h4 {
+  margin: 40px; 
+}
+
+.information-english ul{
+  margin: 40px;
+  line-height:inherit; /*space between line*/
+  white-space:nowrap;
+}
 /*Standard footer-style for all html pages*/
 
   footer {
@@ -172,8 +209,8 @@ body {
   }
   .fa {
     padding: 20px;
-    font-size: 30px;
-    width: 30px;
+    font-size: 20px;
+    width: 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%; /*around image*/
@@ -186,8 +223,20 @@ body {
     background: #3B5998;
     color: white;
   }
+  .fa-map, .fa-map-marker-alt  {
+    background:lavender;
+    color: #125688;
+  }
+  .fa-map-marker-alt  {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%; /*around image*/
+  }
   
-  .fa:hover {
+  .fa:hover, .fas:hover {
       opacity: 0.7;
   }
 

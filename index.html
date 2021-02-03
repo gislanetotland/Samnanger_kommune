@@ -7,6 +7,14 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Samnanger kommune</title>
+    <script>
+      function mOver(obj) {
+        obj.innerHTML = "Ring oss:"
+      } 
+      function mOut(obj) {
+        obj.innerHTML = "Kan vi hjelpe deg?"
+      }
+    </script>
 </head>
 <body>
   <main>
@@ -36,6 +44,7 @@
         <a href="folkevalgt.html">Politikk</a>
         <a href="innhold.html">Innhold A-Å</a>
         <a href="kontakt.html">Kontakt</a>
+        <a href="english.html">English</a>
         
     </div>
     <div class="main-index"> <br><br>
@@ -53,14 +62,16 @@
           <p>Ring koronatelefonen ved spørsmål eller mistanke om koronasmitte i Samnanger. Telefoner er open kvardagar kl. 09.00-14.00 og laurdagar kl. 11.00-12.00.</p>
         </div>
     </div>
-    <div class="hjelp">
+    <div class="main-container">
         <img class="photo" src="photo.jpg" alt="Samnanger_kommune" >
-        <div id="telefone"><br><br> Kan vi hjelpe deg? 
+        <div id="telephone">
+        <div class="animationJS" onmouseover="mOver(this)" onmouseout="mOut(this)"> Kan vi hjelpe deg?</div>
             <h3><i class='fas'>&#xf095;</i> 56 58 74 00 </h3>
             <p><a href="kontakt.html">Vaktelefon / Nødtelefoner</a></p>
         </div>
     </div>
     <div class=container>
+      <div class="link-section">
         <table class="linkene">
             <tr>
                 <th><a href="#">Barn og familie</a> </th>
@@ -73,9 +84,9 @@
                 <td><a href="#">Helsetenester, Svangerskap og fødsel, (Fleire)...</a></td>
             </tr>
             <tr>
-                <td><br></td>
-                <td><br></td>
-                <td><br></td>
+              <td><br></td>
+              <td><br></td>
+              <td><br></td>
             </tr>
             <tr>
                 <th><a href="#">Kultur og fritid</a></th>
@@ -87,22 +98,33 @@
                 <td><a href="#">Omsorgstenester, Økonomiske ytingar, (Fleire)...</a></td>
                 <td><a href="#">Grunnskuleopplæring, Karakterar og evaluering, (Fleire)...</a></td>
             </tr>
+            <tr>
+              <td><br></td>
+              <td><br></td>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td><br></td>
+              <td><br></td>
+              <td><a class="tjeneste" href="tjenester.html">Alle tjenester</a></td>
+            </tr>
         </table>
-        <div id="sosial-media">
-            <p>Finn oss i sosial media:</p>
-            <a href= "https://www.facebook.com/samnanger/" class="fa fa-facebook"></a>Facebook <br>
-            <a href= "https://www.instagram.com/samnangerkommune/?hl=en" class="fa fa-instagram"></a>Instagram
-        </div>
-        <br>
-        <p><a id="tjeneste" href="tjenester.html">Alle tjenester</a></p><br><br>
-    </div>
-    
-      <footer>
+      </div>
+      <div id="sosial-media">
+            <p>Finn oss på sosiale medier:</p>
+            <a href= "https://www.facebook.com/samnanger/" class="fa fa-facebook"></a>
+            <a href= "https://www.instagram.com/samnangerkommune/?hl=en" class="fa fa-instagram"></a>
+            <p>Finn oss på kart:</p>
+            <a href="https://kommunekart.com/?urlid=4d22dfaa-571c-4915-8d0f-978453619ae8"class="fa fa-map"></a>Kommunekart <br>
+            <a href="https://goo.gl/maps/biWimAbRNW2skMvz8" class="fas fa-map-marker-alt"></a> Google maps
+      </div>
+    </div>    
+    <footer>
         <p>Samnanger kommune (orgnr. 964968985) Tyssevegen 217, 5650 Tysse / Telefon: 56 58 74 00
           <a href= "https://www.facebook.com/samnanger/" class="fa fa-facebook"></a>
           <a href= "https://www.instagram.com/samnangerkommune/?hl=en" class="fa fa-instagram"></a>
         <p>@powered by Gis &copy;
-      </footer>
+    </footer>
     
     </main>
 </body>
