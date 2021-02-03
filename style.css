@@ -21,7 +21,7 @@ body {
     background-color: #333;
     overflow: auto;
     white-space: nowrap;
-    /*width: 100%, position: relative*/
+    /*width: 100%, position: relative?*/
   }
   .menu a {
     display: inline-block;
@@ -33,8 +33,49 @@ body {
   div.menu a:hover, .active {
     background-color: #777;
   }
+  .dropdown {
+  /* position: relative;*/
+    display: inline-block;
+  }
+  .dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: #777;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
   /* Coronavirus section  */
+
   .corona {
     border-style: solid;
     border-width: 2px;
@@ -47,14 +88,14 @@ body {
   }
   div.main-index, #om {
     text-align: center;
-}
+  }
   .main-container, .container, .main-english {
-    display: inline-block;
+    display: inline-block; /*all elements of same div in same line*/
     width: 100%;
   }
   .photo {
     /*width: 100%; image in fullscreen*/
-    width: 60%; 
+    width: 60%;
     float: left;
   }
   #telephone{
@@ -73,7 +114,7 @@ body {
     text-align: center;
     width:200px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;/*margin auto left and rigth to centralize element*/
     padding-top: 40px;
     }
 
@@ -85,13 +126,6 @@ body {
     height: 300px;
     background-color:  #f0f7fe;
   }
-  /*
-  .linkene{
-    width: 60%; 
-    float: left;
-    height: 300px;
-    background-color:  #f0f7fe;
-  }*/
   .linkene a{
     text-decoration: none;
     color: black;
@@ -125,9 +159,7 @@ body {
     text-decoration: none;
     color: darkslateblue;
     text-align: left;
-  
   }
-  
   .main, ul {
     margin: 85px; 
     list-style-type: circle;
@@ -135,8 +167,7 @@ body {
   ul{
     line-height: 1.8; /*space between line*/
   }
-  #innhold {
-    
+  #innhold { 
     white-space: pre; /*show the text exactly how this is by html with break*/
     line-height: 1.8;
   }
@@ -145,7 +176,7 @@ body {
     line-height: 1.8;
   }
 
-/* table style for main section of om.html */
+/* Style for table in main section of om.html */
 
   .main table {
     border-collapse: collapse;
@@ -153,23 +184,21 @@ body {
     margin-right: auto;
     /* width: 100%; */
     }
-
   .main td, .main th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
     }
-
   .main tr:nth-child(even) {
     background-color: #dddddd;
     }
-
   .photo-samnanger{
     width:528px;
     height:258px;
     margin-left: auto; 
     margin-right: auto;
     }
+
 /* icon envelop and telefon in kontakt.html*/
    .far {
     font-size:24px
@@ -180,25 +209,24 @@ body {
 
 /* English style */
 
-.information-english{
-  width: 60%; 
-  float: left;
-  height: 520px;
-  background-color:  #f0f7fe;
-  
-}
-.information-english h2, .information-english p{
-  text-align: center;
-} 
-.information-english h4 {
-  margin: 40px; 
-}
+  .information-english{
+    width: 60%; 
+    float: left;
+    height: 520px;
+    background-color:  #f0f7fe;
+  }
+  .information-english h2, .information-english p{
+    text-align: center;
+  } 
+  .information-english h4 {
+    margin: 40px; 
+  }
 
-.information-english ul{
-  margin: 40px;
-  line-height:inherit; /*space between line*/
-  white-space:nowrap;
-}
+  .information-english ul{
+    margin: 40px;
+    line-height:inherit; /*space between line*/
+    white-space:nowrap;
+  }
 /*Standard footer-style for all html pages*/
 
   footer {
@@ -241,51 +269,5 @@ body {
   }
 
 
+  
  
-.dropdown {
- /* position: relative;*/
-  display: inline-block;
-}
-
-.dropdown .dropbtn {
-  font-size: 17px;    
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  color: black;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #777;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
