@@ -11,4 +11,5 @@ ii. If you think that something could be designed in a better way, for
 example, an element is a bit out of place, try to “fix” it in your
 page.
 
-This is a new version of the webside: www.samnanger.kommune.no
+This is my version of the Samnanger kommune website: https://samnanger-kommune-2021.netlify.app/
+
